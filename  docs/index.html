@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>INFINITY HUB</title>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">∞ INFINITY HUB</div>
+
+        <select id="language">
+            <option value="uz">UZ</option>
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+            <option value="es">ES</option>
+        </select>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+            <h1 id="welcome">
+                Kelajak shu yerdan boshlanadi
+            </h1>
+
+            <p id="subtitle">
+                Barcha imkoniyatlar bitta platformada.
+            </p>
+        </section>
+
+        <section class="modules">
+
+            <div class="module" onclick="openModule('ai')">
+                <span>🤖</span>
+                <h2>INFINITY AI</h2>
+                <p>Sun'iy intellekt yordamchisi</p>
+            </div>
+
+            <div class="module" onclick="openModule('studio')">
+                <span>💻</span>
+                <h2>APP STUDIO</h2>
+                <p>Ilova va sayt yaratish</p>
+            </div>
+
+            <div class="module" onclick="openModule('creative')">
+                <span>🎨</span>
+                <h2>CREATIVE LAB</h2>
+                <p>Ijodiy imkoniyatlar</p>
+            </div>
+
+            <div class="module" onclick="openModule('market')">
+                <span>🛍️</span>
+                <h2>MARKETPLACE</h2>
+                <p>Raqamli mahsulotlar</p>
+            </div>
+
+            <div class="module" onclick="openModule('community')">
+                <span>🌐</span>
+                <h2>COMMUNITY</h2>
+                <p>Hamjamiyat</p>
+            </div>
+
+            <div class="module" onclick="openModule('profile')">
+                <span>👤</span>
+                <h2>MY SPACE</h2>
+                <p>Shaxsiy kabinet</p>
+            </div>
+
+        </section>
+
+        <section id="module-page" class="module-page">
+            <h2 id="module-title">INFINITY HUB</h2>
+
+            <p id="module-description">
+                Bo'limni tanlang.
+            </p>
+
+            <button onclick="goHome()" id="back-button">
+                Bosh sahifaga qaytish
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+        INFINITY HUB © 2026
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
